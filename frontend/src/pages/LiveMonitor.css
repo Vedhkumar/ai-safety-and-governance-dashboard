@@ -1,0 +1,118 @@
+.live-monitor {
+  max-width: 1200px;
+}
+
+.live-counter {
+  text-align: center;
+  padding: var(--space-lg);
+}
+
+.counter-value {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 8px;
+  font-variant-numeric: tabular-nums;
+}
+
+.counter-label {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.event-feed {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.event-card {
+  padding: 14px var(--space-lg);
+  cursor: pointer;
+  border-left: 3px solid transparent;
+}
+
+.event-card.passed { border-left-color: var(--status-passed); }
+.event-card.blocked { border-left-color: var(--status-blocked); }
+.event-card.flagged { border-left-color: var(--status-flagged); }
+
+.event-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.status-icon {
+  font-size: 16px;
+}
+
+.event-time {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  min-width: 80px;
+}
+
+.event-model {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent-cyan);
+  background: rgba(6, 182, 212, 0.1);
+  padding: 2px 10px;
+  border-radius: 50px;
+}
+
+.event-latency {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+.event-score {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.score-label {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.score-num {
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  min-width: 30px;
+}
+
+.event-cost {
+  font-size: 13px;
+  color: var(--accent-amber);
+  font-family: var(--font-mono);
+  margin-left: auto;
+}
+
+.event-details {
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border-subtle);
+  overflow: hidden;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.detail-grid strong {
+  color: var(--text-muted);
+}
