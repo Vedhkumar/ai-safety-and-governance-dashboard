@@ -106,7 +106,7 @@ export default function Analytics() {
           <h3>Request Distribution</h3>
           <ResponsiveContainer width="100%" height={300}>
             <PieChart>
-              <Pie data={costs} dataKey="request_count" nameKey="model" cx="50%" cy="50%" outerRadius={100} label={({ model }) => model}>
+              <Pie data={costs} dataKey="request_count" nameKey="model" cx="50%" cy="50%" outerRadius={100} label={({ name }) => name}>
                 {costs.map((_, i) => <Cell key={i} fill={COLORS[i % COLORS.length]} />)}
               </Pie>
               <Tooltip contentStyle={{ background: 'var(--bg-tertiary)', border: '1px solid var(--border-subtle)', borderRadius: 8, color: 'var(--text-primary)' }} />

@@ -10,7 +10,7 @@ export default function AuditExplorer() {
   const [pages, setPages] = useState(0);
   const [filters, setFilters] = useState({ model: '', status: '', search: '' });
   const [selectedLog, setSelectedLog] = useState<any>(null);
-  const [loading, setLoading] = useState(true);
+  const [_loading, setLoading] = useState(true);
 
   const loadLogs = async () => {
     setLoading(true);

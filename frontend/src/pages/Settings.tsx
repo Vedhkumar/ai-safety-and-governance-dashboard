@@ -7,7 +7,7 @@ export default function Settings() {
   const [newKeyName, setNewKeyName] = useState('');
   const [newKeyLimit, setNewKeyLimit] = useState(100);
   const [createdKey, setCreatedKey] = useState('');
-  const [loading, setLoading] = useState(true);
+  const [_loading, setLoading] = useState(true);
 
   const loadKeys = async () => {
     try {

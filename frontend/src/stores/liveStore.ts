@@ -23,7 +23,7 @@ interface LiveState {
   clearEvents: () => void;
 }
 
-export const useLiveStore = create<LiveState>((set, get) => ({
+export const useLiveStore = create<LiveState>((set) => ({
   events: [],
   requestsPerMin: 0,
   blocksPerMin: 0,

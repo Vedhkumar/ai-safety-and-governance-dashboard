@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useWebSocket } from '../hooks/useWebSocket';
-import { useLiveStore, LiveEvent } from '../stores/liveStore';
+import { useLiveStore } from '../stores/liveStore';
+import type { LiveEvent } from '../stores/liveStore';
 import './LiveMonitor.css';
 
 function LiveCounter({ label, value, color }: { label: string; value: number | string; color: string }) {

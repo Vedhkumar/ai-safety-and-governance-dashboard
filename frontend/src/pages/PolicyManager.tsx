@@ -12,7 +12,7 @@ export default function PolicyManager() {
   const [form, setForm] = useState({ name: '', condition: '', action: 'block', message: '', priority: 0, is_active: true });
   const [testPrompt, setTestPrompt] = useState('');
   const [testResults, setTestResults] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [_loading, setLoading] = useState(true);
 
   const loadPolicies = async () => {
     try {
